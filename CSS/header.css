@@ -1,0 +1,33 @@
+.phone-block {
+   padding: 13px 0px;
+   display: flex;
+   justify-content: center;
+   background-color: #000000;
+}
+
+.phone-block p,
+a {
+   font-family: "Open Sans";
+   font-size: 20px;
+   font-weight: 400;
+   line-height: 27.24px;
+   text-align: left;
+   color: #FFFFFF;
+}
+
+.phone-block a {
+   text-decoration: none;
+   margin-left: 15px;
+}
+
+.header-block {
+   background-color: gray;
+}
+
+@media (max-width: 550px) {
+
+   .phone-block p,
+   a {
+      font-size: 14px;
+   }
+}

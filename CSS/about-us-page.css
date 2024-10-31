@@ -1,0 +1,250 @@
+.aboutuspage {
+   display: flex;
+   flex-direction: column;
+   border-top: 1px solid #D9D9D9;
+   background: none;
+}
+
+.aboutuspage>h5 {
+   display: block;
+   color: #000;
+   text-align: center;
+   font-family: "Piazzolla";
+   font-size: 20px;
+   font-style: normal;
+   font-weight: 300;
+   line-height: normal;
+   text-align: left;
+   margin: 29px 0px 67px 0px;
+}
+
+.line-for-header {
+   display: flex;
+   align-items: center;
+   margin: 0;
+}
+
+.line-for-header>div {
+   background: #000;
+   height: 1px;
+   width: 100%;
+}
+
+.line-for-header>p {
+   color: #000;
+   font-family: "Piazzolla";
+   font-size: 35px;
+   font-style: normal;
+   font-weight: 300;
+   line-height: normal;
+   text-transform: uppercase;
+   white-space: nowrap;
+   margin: 0px 120px;
+}
+
+.about-us-page-description {
+   margin: 120px -30px;
+   position: relative;
+}
+
+.wrapper-aboutus {
+   display: flex;
+   flex-direction: row;
+}
+
+.main-block {
+   z-index: 2;
+   margin: 54px 0px;
+   display: flex;
+   flex-direction: column;
+   align-items: start;
+   background: #FFF;
+   box-shadow: 0px 4px 25.2px 0px rgba(0, 0, 0, 0.25);
+   height: 647px;
+   width: 100%;
+}
+
+.main-block>p {
+   color: rgba(0, 0, 0, 0.83);
+   font-family: "Piazzolla";
+   font-size: 26px;
+   font-style: normal;
+   font-weight: 300;
+   line-height: normal;
+   margin: 88px 110px 80px 77px;
+   width: 643px;
+}
+
+.btn {
+   display: flex;
+   width: 608px;
+   height: 60px;
+   padding: 8px 105px;
+   justify-content: center;
+   align-items: center;
+   gap: 10px;
+   flex-shrink: 0;
+   color: #FFF;
+   font-family: "Open Sans";
+   font-size: 22px;
+   font-style: normal;
+   font-weight: 400;
+   line-height: 24px;
+   letter-spacing: 0.1px;
+   text-transform: uppercase;
+   background: var(--Gold, linear-gradient(96deg, #DEB217 6.11%, #FEE075 99.69%));
+   border: none;
+   margin-left: 77px;
+   cursor: pointer;
+   text-decoration: none;
+}
+
+.wrapper-aboutus>img {
+   z-index: 3;
+   position: absolute;
+   width: 749px;
+   height: 755px;
+   flex-shrink: 0;
+   margin-right: 49px;
+   right: 0;
+}
+
+.back-block {
+   display: block;
+   height: 717px;
+   width: 799px;
+   background: var(--Gold, linear-gradient(96deg, #DEB217 6.11%, #FEE075 99.69%));
+   position: absolute;
+   z-index: 1;
+   right: 0;
+   margin-right: 24px;
+   top: 19px;
+}
+
+.phone-btn {
+   display: none;
+   order: 3;
+}
+
+@media (max-width: 1650px) {
+   .wrapper-aboutus>img {
+      width: 649px;
+      height: 655px;
+   }
+
+   .back-block {
+      height: 617px;
+      width: 699px;
+   }
+
+   .main-block {
+      margin: 44px 0px;
+      height: 567px;
+   }
+
+   .main-block>p {
+      margin: 48px 110px 30px 47px;
+   }
+}
+
+@media (max-width: 1500px) {
+   .btn {
+      width: 408px;
+      height: 60px;
+      padding: 8px 55px;
+   }
+
+   .main-block>p {
+      font-size: 24px;
+      width: 543px;
+   }
+}
+
+@media (max-width: 1400px) {
+   .main-block>p {
+      font-size: 22px;
+      width: 443px;
+   }
+}
+
+@media (max-width: 1250px) {
+   .wrapper-aboutus>img {
+      position: relative;
+      width: 100%;
+      height: auto;
+   }
+
+   .back-block {
+      display: none;
+   }
+
+   .wrapper-aboutus {
+      flex-direction: column;
+   }
+
+   .main-block {
+      order: 2;
+      margin: 0;
+      height: fit-content;
+   }
+
+   .about-us-page-description {
+      margin: 60px 0px;
+   }
+
+   .main-block>p {
+      font-size: 32px;
+      margin: 16px 8px;
+      width: fit-content;
+      text-align: center;
+   }
+
+   .btn {
+      display: none;
+   }
+
+   .phone-btn {
+      display: flex;
+      margin-top: 16px;
+      margin-left: 0;
+      width: 100%;
+   }
+}
+
+@media (max-width: 800px) {
+
+   .aboutuspage>h5 {
+      display: none;
+   }
+
+   .line-for-header {
+      margin: 25px 0px;
+   }
+
+   .about-us-page-description {
+      margin-top: 0;
+   }
+
+   .main-block>p {
+      font-size: 24px;
+   }
+
+   .line-for-header>p {
+      margin: 0px 30px;
+   }
+}
+
+@media (max-width: 500px) {
+   .line-for-header>p {
+      font-size: 28px;
+   }
+
+   .main-block>p {
+      font-size: 18px;
+   }
+
+   .phone-btn {
+      padding: 8px 25px;
+      font-size: 18px;
+   }
+}

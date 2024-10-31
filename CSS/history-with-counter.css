@@ -1,0 +1,253 @@
+.history-with-counter {
+   margin-top: 217px;
+   margin-bottom: 129px;
+}
+
+.history-cards {
+   display: grid;
+   grid-template-columns: repeat(4, 1fr);
+   gap: 17px;
+}
+
+.history-card {
+   margin-top: 47px;
+   display: flex;
+   flex-direction: column;
+   width: 100%;
+   flex-shrink: 0;
+   overflow: hidden;
+   text-decoration: none;
+}
+
+.history-card-wrapper-counter {
+   display: flex;
+   flex-direction: column;
+   width: 100%;
+   flex-shrink: 0;
+   background: #FFF;
+}
+
+.history-card span {
+   display: block;
+}
+
+.size {
+   color: rgba(0, 0, 0, 0.79);
+   font-family: "Open Sans";
+   font-size: 22px;
+   font-style: normal;
+   font-weight: 400;
+   line-height: 24px;
+   letter-spacing: 0.1px;
+   margin-top: 14px;
+   margin-bottom: 19px;
+}
+
+.price {
+   color: #000;
+   font-family: "Open Sans";
+   font-size: 22px;
+   font-style: normal;
+   font-weight: 600;
+   line-height: 24px;
+   letter-spacing: 0.1px;
+}
+
+.history-with-counter-buy {
+   display: flex;
+   justify-content: space-between;
+   margin: 29px 23px 28px 23px;
+   gap: 10px;
+}
+
+.buy-with-counter {
+   display: flex;
+   height: 50px;
+   padding: 8px 55px;
+   justify-content: center;
+   align-items: center;
+   text-align: center;
+   gap: 10px;
+   flex-shrink: 0;
+   background: var(--Gold, linear-gradient(96deg, #DEB217 6.11%, #FEE075 99.69%));
+}
+
+.buy-text-with-counter {
+   color: #FFF;
+   font-family: "Open Sans";
+   font-size: 22px;
+   font-style: normal;
+   font-weight: 400;
+   line-height: 24px;
+   letter-spacing: 0.1px;
+}
+
+.counter {
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   border: 1.5px solid #D9D9D9;
+   width: 121px;
+   height: 50px;
+   flex-shrink: 0;
+}
+
+.counter p {
+   text-align: center;
+   width: calc(100%/3);
+   color: #8E8E8E;
+   font-family: "Open Sans";
+   font-size: 26px;
+   font-style: normal;
+   font-weight: 400;
+   line-height: 24px;
+   letter-spacing: 0.1px;
+}
+
+#number {
+   color: #000;
+   font-size: 19px;
+}
+
+.history-card-wrapper-counter img {
+   width: 100%;
+   object-fit: cover;
+   aspect-ratio: 1 / 1;
+}
+
+.history-card-wrapper-counter h4 {
+   margin-top: 18px;
+   text-align: center;
+   align-items: center;
+   color: #000;
+   font-family: "Open Sans";
+   font-size: 22px;
+   font-style: normal;
+   font-weight: 600;
+   line-height: 24px;
+   letter-spacing: 0.1px;
+}
+
+.history-card-wrapper-counter>p {
+   display: block;
+   font-family: "Open Sans";
+   font-size: 22px;
+   font-style: normal;
+   font-weight: 600;
+   line-height: 24px;
+   letter-spacing: 0.1px;
+   background: var(--Gold, linear-gradient(96deg, #DEB217 6.11%, #FEE075 99.69%));
+   background-clip: text;
+   -webkit-background-clip: text;
+   -webkit-text-fill-color: transparent;
+   margin: 43px 0px 26px 28px;
+}
+
+
+@media (max-width: 1600px) {
+
+   .history-cards {
+      grid-template-columns: repeat(3, 1fr);
+   }
+
+   .history-with-counter {
+      margin-top: 150px;
+   }
+}
+
+@media (max-width: 1350px) {
+
+   .history-card h4 {
+      font-size: 18px;
+   }
+
+   .history-with-counter {
+      margin-top: 100px;
+   }
+
+   .buy-with-counter {
+      padding: 8px 15px;
+   }
+
+   .history-card p {
+      margin: 0;
+   }
+}
+
+@media (max-width: 1000px) {
+
+   .history-card-wrapper>p {
+      display: none;
+   }
+
+   .history-card-wrapper h4 {
+      font-size: 16px;
+      font-style: normal;
+      font-weight: 300;
+      line-height: 19px;
+   }
+
+   .counter {
+      width: 70px;
+   }
+
+   .history-with-counter-buy {
+      margin: 19px 10px 18px 10px;
+   }
+}
+
+@media (max-width: 850px) {
+   .history-cards {
+      grid-template-columns: repeat(2, 1fr);
+   }
+
+   .history-with-counter {
+      margin-top: 70px;
+      bottom: 50px;
+   }
+
+   .history-cards {
+      gap: 8px;
+   }
+
+   .counter {
+      width: 120px;
+   }
+
+   .line-for-header>p {
+      font-size: 26px;
+      margin: 0px 10px;
+   }
+
+   .catalog-line {
+      margin-top: 20px;
+      margin-bottom: 20px;
+   }
+}
+
+@media (max-width: 650px) {
+   .history-cards {
+      grid-template-columns: repeat(1, 1fr);
+   }
+
+   .history-card {
+      margin-top: 20px;
+   }
+
+   .counter {
+      width: 80px;
+   }
+
+   .history {
+      margin: 53px 0px;
+   }
+
+   .buy-with-counter {
+      width: calc(100% - 100px);
+   }
+
+   .history-with-counter {
+      margin-bottom: 50px;
+      margin-top: 30px;
+   }
+}
