@@ -78,3 +78,4 @@ document.querySelectorAll('.footer-title > p').forEach((toggle) => {
         }
     });
 });
+  
