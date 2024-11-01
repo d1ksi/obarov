@@ -79,3 +79,30 @@ document.querySelectorAll('.footer-title > p').forEach((toggle) => {
     });
 });
   
+
+
+    let currentIndex = 0;
+    function nextSlide() {
+        const slides = document.querySelector('.slides');
+        if (!slides) return;
+        currentIndex = (currentIndex + 1) % slides.children.length;
+        updateSlidePosition();
+    }
+    function prevSlide() {
+        const slides = document.querySelector('.slides');
+        if (!slides) return;
+        currentIndex = (currentIndex - 1 + slides.children.length) % slides.children.length;
+        updateSlidePosition();
+    }
+    function updateSlidePosition() {
+        const slides = document.querySelector('.slides');
+        if (!slides) return; 
+        slides.style.transform = `translateX(-${currentIndex * 100}%)`;
+    }
+    document.addEventListener('DOMContentLoaded', () => {
+        const prevButton = document.querySelector('.prev');
+        const nextButton = document.querySelector('.next');
+        
+        if (prevButton) prevButton.addEventListener('click', prevSlide);
+        if (nextButton) nextButton.addEventListener('click', nextSlide); 
+    });

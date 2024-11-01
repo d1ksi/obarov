@@ -1,5 +1,5 @@
 .description-catalog-good {
-   margin: 20px 140px;
+   margin: 0;
 }
 
 .buy-with-counter-black {
@@ -197,9 +197,6 @@
 }
 
 @media (max-width: 1100px) {
-   .description-catalog-good {
-      margin: 0;
-   }
 
    .catalog-line {
       margin-top: 40px;
