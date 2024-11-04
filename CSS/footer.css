@@ -97,6 +97,7 @@ footer {
    max-height: fit-content;
    overflow: hidden;
    transition: max-height 1s ease;
+   margin-top: 20px;
 }
 
 .footer-info.open>nav {
