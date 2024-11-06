@@ -1,0 +1,73 @@
+@media (max-width: 1500px) {
+   .previous-order-block {
+      gap: 30px;
+   }
+
+   .menu-acc button {
+      width: 280px;
+      font-size: 22px;
+   }
+}
+
+@media (max-width: 1250px) {
+   .menu-acc button {
+      width: 100%;
+      font-size: 26px;
+   }
+
+   .acc-main-content {
+      flex-direction: column;
+      gap: 30px;
+   }
+
+   .previous-card-wrapper {
+      justify-content: space-between;
+   }
+
+   .previous-card-wrapper img {
+      margin: 0;
+   }
+
+   .account-main img {
+      margin-top: 20px;
+   }
+
+   .order-content {
+      padding: 15px 20px 0px 0px;
+   }
+}
+
+
+@media (max-width: 850px) {
+   .previous-card-wrapper img {
+      width: 172px;
+      height: 117px;
+   }
+
+   .previous-order-block {
+      grid-template-columns: repeat(1, 1fr);
+   }
+
+   .menu-acc button {
+      font-size: 20px;
+   }
+}
+
+@media (max-width: 400px) {
+   .order-content h5 {
+      font-size: 20px;
+   }
+
+   .price-quantity {
+      font-size: 16px;
+   }
+
+   .account-main {
+      margin-bottom: 30px;
+      padding: 30px 10px 20px 10px;
+   }
+
+   .order-content {
+      gap: 5px;
+   }
+}

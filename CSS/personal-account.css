@@ -1,0 +1,348 @@
+.account-title {
+   margin: 74px 0px;
+}
+
+
+.account-main {
+   background: #FFF;
+   box-shadow: 0px 0px 18.5px 0px rgba(0, 0, 0, 0.11);
+   display: flex;
+   flex-direction: column;
+   margin-bottom: 110px;
+   padding: 94px 60px 30px 60px;
+}
+
+.menu-acc {
+   display: flex;
+   flex-direction: column;
+}
+
+.menu-acc div p {
+   color: rgba(0, 0, 0, 0.38);
+   font-family: "Oleo Script";
+   font-size: 76px;
+   font-style: normal;
+   font-weight: 400;
+   line-height: 138.889%;
+   letter-spacing: 22.04px;
+   margin-bottom: 110px;
+}
+
+.menu-acc button {
+   margin-top: 40px;
+   width: 380px;
+   padding-bottom: 36px;
+   border: none;
+   border-bottom: 1px solid rgba(0, 0, 0, 0.50);
+   color: #000;
+   font-family: "Open Sans";
+   font-size: 25px;
+   font-style: normal;
+   font-weight: 300;
+   line-height: normal;
+   text-align: left;
+   background: none;
+   cursor: pointer;
+}
+
+.menu-acc button:hover {
+   color: #DEB217;
+}
+
+#btn1 {
+   margin: 0;
+}
+
+#btn4 {
+   border: none;
+}
+
+.acc-main-content {
+   display: flex;
+   flex-direction: row;
+   gap: 180px;
+}
+
+.personal-data {
+   width: 100%;
+}
+
+.personal-data form {
+   display: flex;
+   flex-direction: column;
+}
+
+.personal-data form>div {
+   display: flex;
+   flex-direction: row;
+   gap: 127px;
+}
+
+.personal-data form>div:first-child {
+   margin-bottom: 54px;
+}
+
+.form-wrapper {
+   display: flex;
+   flex-direction: column;
+   width: 100%;
+}
+
+.form-wrapper label {
+   color: #000;
+   font-family: "Open Sans";
+   font-size: 18px;
+   font-style: normal;
+   font-weight: 400;
+   line-height: 150%;
+   margin-bottom: 8px;
+   white-space: nowrap;
+}
+
+.form-wrapper input,
+.new-pass {
+   width: 100%;
+   max-width: 414px;
+   display: flex;
+   height: 48px;
+   padding: 12px;
+   align-items: center;
+   gap: 8px;
+   border: 1px solid #000;
+   background: var(--White, #FFF);
+}
+
+.save {
+   cursor: pointer;
+   margin: 0 auto;
+   margin-top: 77px;
+   margin-bottom: 44px;
+   display: flex;
+   width: 473px;
+   height: 50px;
+   padding: 8px 105px;
+   justify-content: center;
+   align-items: center;
+   gap: 10px;
+   flex-shrink: 0;
+   background: var(--Gold, linear-gradient(96deg, #DEB217 6.11%, #FEE075 99.69%));
+   color: #FFF;
+   font-family: "Open Sans";
+   font-size: 22px;
+   font-style: normal;
+   font-weight: 400;
+   line-height: 24px;
+   letter-spacing: 0.1px;
+   border: none;
+}
+
+.account-main img {
+   width: 446px;
+   height: 38px;
+   flex-shrink: 0;
+   margin: 0 auto;
+}
+
+.personal-data form>label {
+   color: #000;
+   font-family: "Open Sans";
+   font-size: 18px;
+   font-style: normal;
+   font-weight: 400;
+   line-height: 150%;
+   margin-bottom: 12px;
+}
+
+#email-label {
+   margin-top: 54px;
+}
+
+#email {
+   width: 100%;
+   max-width: 100%;
+   margin-bottom: 54px;
+   display: flex;
+   height: 48px;
+   padding: 12px;
+   align-items: center;
+   max-width: 100%;
+   gap: 8px;
+   border: 1px solid #000;
+   background: var(--White, #FFF);
+}
+
+.previous-order-block {
+   display: grid;
+   grid-template-columns: repeat(2, 1fr);
+   gap: 60px;
+}
+
+.previous-card {
+   display: flex;
+   flex-direction: column;
+   border-radius: 10px;
+   background: #FFF;
+}
+
+.previous-card-wrapper {
+   display: flex;
+   gap: 15px;
+}
+
+.previous-card-wrapper img {
+   width: 172px;
+   height: 117px;
+   flex-shrink: 0;
+   border-radius: 10px 0px 0px 0px;
+}
+
+.order-content {
+   display: flex;
+   flex-direction: column;
+   gap: 10px;
+   padding: 15px 82px 12px 0px;
+}
+
+.order-content h5 {
+   color: #000;
+   font-family: "Montserrat";
+   font-size: 25px;
+   font-style: normal;
+   font-weight: 500;
+   line-height: normal;
+}
+
+.price-quantity {
+   color: rgba(0, 0, 0, 0.69);
+   font-family: "Montserrat";
+   font-size: 18px;
+   font-style: normal;
+   font-weight: 400;
+   line-height: normal;
+}
+
+.data-oreder {
+   color: #DEB217;
+   font-family: "Montserrat";
+   font-size: 18px;
+   font-style: normal;
+   font-weight: 400;
+   line-height: normal;
+}
+
+.previous-card button {
+   border: none;
+   border-radius: 0px 0px 10px 10px;
+   background: var(--Gold, linear-gradient(96deg, #DEB217 6.11%, #FEE075 99.69%));
+   color: #FFF;
+   font-family: "Montserrat";
+   font-size: 25px;
+   font-style: normal;
+   font-weight: 500;
+   line-height: normal;
+}
+
+@media (max-width: 1750px) {
+   .order-content {
+      padding: 15px 20px 12px 0px;
+   }
+
+   .acc-previous-orders {
+      gap: 80px;
+   }
+}
+
+@media (max-width: 1500px) {
+   .personal-data form>div {
+      display: flex;
+      gap: 50px;
+   }
+
+   .account-main {
+      margin-bottom: 70px;
+      padding: 50px 30px 30px 30px;
+   }
+
+   .acc-main-content {
+      gap: 80px;
+   }
+}
+
+
+
+@media (max-width: 1150px) {
+   .personal-data form>div {
+      flex-direction: column;
+      gap: 20px;
+   }
+
+   .personal-data form>div:first-child {
+      margin-bottom: 20px;
+   }
+
+   #email-label {
+      margin-top: 20px;
+   }
+
+   #email {
+      margin-bottom: 20px;
+   }
+
+   .save {
+      margin-top: 40px;
+      margin-bottom: 25px;
+   }
+
+   .form-wrapper input,
+   .new-pass {
+      width: 100%;
+      max-width: 100%;
+   }
+}
+
+
+@media (max-width: 850px) {
+   .acc-main-content {
+      flex-direction: column;
+      gap: 30px;
+   }
+
+   .menu-acc button {
+      width: 100%;
+   }
+
+   .menu-acc div p {
+      font-size: 46px;
+      margin-bottom: 50px;
+   }
+
+   .save {
+      margin-top: 30px;
+      margin-bottom: 30px;
+      width: 100%;
+      height: 50px;
+      font-size: 18px;
+   }
+
+   .account-main img {
+      width: 100%;
+   }
+
+   .account-title {
+      margin: 34px 0px;
+   }
+}
+
+
+@media (max-width: 500px) {
+   .menu-acc button {
+      margin-top: 25px;
+      font-size: 20px;
+      padding-bottom: 20px;
+   }
+
+   .account-main {
+      margin-bottom: 30px;
+      padding: 30px 20px 20px 20px;
+   }
+}
