@@ -24,7 +24,7 @@ if (sliderImages.length > 0 && sliderLine) {
         sliderCount++;
         if (sliderCount >= sliderImages.length) sliderCount = 0;
         rollSlider();
-        thisSlide(sliderCount);
+        thisSlide(sliderCount);а
     }
 
     function prevSlide() {
@@ -105,4 +105,113 @@ document.querySelectorAll('.footer-title > p').forEach((toggle) => {
         
         if (prevButton) prevButton.addEventListener('click', prevSlide);
         if (nextButton) nextButton.addEventListener('click', nextSlide); 
+    });
+
+
+    const container = document.querySelector('.slider-container');
+    const slides = document.querySelectorAll('.slide');
+    const prevButton = document.querySelector('.prev');
+    const nextButton = document.querySelector('.next');
+    
+    if (container && slides.length > 0 && prevButton && nextButton) {
+      let currentIndex1 = 0;
+    
+      function updateSlider() {
+        const slideWidth = slides[0].clientWidth;
+        container.style.transform = `translateX(-${currentIndex1 * slideWidth}px)`;
+      }
+    
+      nextButton.addEventListener('click', () => {
+        if (currentIndex1 < slides.length - 3) {
+          currentIndex1++;
+        }
+        updateSlider();
+      });
+    
+      prevButton.addEventListener('click', () => {
+        if (currentIndex1 > 0) {
+          currentIndex1--;
+        }
+        updateSlider();
+      });
+    
+      window.addEventListener('resize', updateSlider);
+    }
+    
+    document.querySelectorAll('.select-buttons-text').forEach(buttonGroup => {
+        const buttons = buttonGroup.querySelectorAll('.select-button');   
+        buttons.forEach(button => {
+            button.addEventListener('click', () => {
+                buttons.forEach(btn => {
+                    const innerDiv = btn.querySelector('div');
+                    if (innerDiv) {
+                        innerDiv.classList.remove('sbt-active');
+                    }
+                });
+                const innerDiv = button.querySelector('div');
+                if (innerDiv) {
+                    innerDiv.classList.add('sbt-active');
+                }
+            });
+        });
+    });
+
+    // document.addEventListener("DOMContentLoaded", function () {
+    //     function initSlider3() {
+    //         const orderCards = document.querySelectorAll(".slider3-card");
+    //         let currentIndex = 0;
+
+    //         function showCard(index) {
+    //             orderCards.forEach((card, i) => {
+    //                 card.classList.toggle("active", i === index);
+    //             });
+    //         }
+
+    //         showCard(currentIndex);
+
+    //         function nextCard() {
+    //             currentIndex = (currentIndex + 1) % orderCards.length;
+    //             showCard(currentIndex);
+    //         }
+
+    //         function prevCard() {
+    //             currentIndex = (currentIndex - 1 + orderCards.length) % orderCards.length;
+    //             showCard(currentIndex);
+    //         }
+
+    //         const nextButton = document.querySelector(".slider-button-next");
+    //         const prevButton = document.querySelector(".slider-button-prev");
+
+    //         if (nextButton) nextButton.addEventListener("click", nextCard);
+    //         if (prevButton) prevButton.addEventListener("click", prevCard);
+    //     }
+
+    //     if (document.querySelector(".slider3")) {
+    //         initSlider3();
+    //     }
+    // });
+
+
+    document.addEventListener("DOMContentLoaded", function () {
+        const orderCards = document.querySelectorAll(".slider3-card");
+        let currentIndex = 0;
+
+        function showCard(index) {
+            orderCards.forEach((card, i) => {
+                card.classList.toggle("active", i === index);
+            });
+        }
+
+        function nextCard() {
+            currentIndex = (currentIndex + 1) % orderCards.length;
+            showCard(currentIndex);
+        }
+
+        function prevCard() {
+            currentIndex = (currentIndex - 1 + orderCards.length) % orderCards.length;
+            showCard(currentIndex);
+        }
+
+        document.querySelector(".slider-button-next").addEventListener("click", nextCard);
+        document.querySelector(".slider-button-prev").addEventListener("click", prevCard);
     });
