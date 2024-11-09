@@ -5,6 +5,11 @@
 
 .menu-wrapper {
    flex-grow: 1;
+   position: fixed;
+   top: 53.23px;
+   left: 0;
+   width: 100%;
+   z-index: 1000;
 }
 
 .open {

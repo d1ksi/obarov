@@ -1,4 +1,9 @@
 .phone-block {
+   position: fixed;
+   top: 0;
+   left: 0;
+   width: 100%;
+   z-index: 1000;
    padding: 13px 0px;
    display: flex;
    justify-content: center;
